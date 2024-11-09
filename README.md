@@ -56,4 +56,7 @@ Syntax:
        //descendant::tagName
 ```
 
+### 6. Xpath using Preceding?
+Preceding XPath Axes are used to traverse all nodes that comes before the current html.
 
+//*[attribute=’value’]/preceding::tagname        
