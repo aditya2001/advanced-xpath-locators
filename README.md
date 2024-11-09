@@ -6,7 +6,7 @@
 Xpath=//tagname[@attribute='value']
 ```
 
-### Xpath using Following?
+### 2. Xpath using Following?
 Following selects all the nodes that follow current node.
 It selects everything in the document after the closing tag of the current node.
 
@@ -20,7 +20,7 @@ https://accounts.lambdatest.com/register?_gl=1*196o109*_gcl_au*NzQ3MjMwODk5LjE3M
 //div[contains(@class,'login')]//following::input
 ```
 
-### Xpath using Following-Sibling?
+### 3. Xpath using Following-Sibling?
 
 The following-sibling selects all sibling nodes after the current node which are same level as current node.
 
@@ -30,7 +30,7 @@ The following-sibling selects all sibling nodes after the current node which are
 //div[contains(@class,'error__border')]//following-sibling::div
 ```
 
-### Xpath using Parent?
+### 4. Xpath using Parent?
 
 XPath using the parent axes is a method used to select the parent node of the current node in an XML or HTML document.
 
@@ -39,4 +39,21 @@ XPath using the parent axes is a method used to select the parent node of the cu
 ```java
 //div[contains(@class,'login')]/parent::div
 ```
+
+### 5. Xpath using Ancestor?
+The ancestor axis selects all ancestor elements (parent, grandparent, great-grandparents, etc.) of the current node.
+
+```java
+Syntax:
+       //ancestor::tagName
+```
+
+### 5. Xpath using Descendant?
+The descendant axis selects all descendant elements (children, grandchildren, etc) of the current node.
+
+```java
+Syntax:
+       //descendant::tagName
+```
+
 
